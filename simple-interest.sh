@@ -1,14 +1,14 @@
 #!/bin/bash
 
-echo "Enter Principal Amount:"
+echo "Enter Principal:"
 read principal
 
 echo "Enter Rate of Interest:"
 read rate
 
-echo "Enter Time Period (years):"
+echo "Enter Time Period:"
 read time
 
-simple_interest=$(echo "$principal * $rate * $time / 100" | bc -l)
+simple_interest=$(echo "$principal * $rate * $time / 100" | bc)
 
 echo "Simple Interest = $simple_interest"
